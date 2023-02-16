@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Quicksand:wght@300;400;500;600;700&family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Quicksand:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
 
 body {
   margin: 0;
@@ -27,6 +27,7 @@ h4,
 h5,
 h6 {
   color: var(--color-neutral-light);
+  font-weight: normal;
 }
 
 h1 {

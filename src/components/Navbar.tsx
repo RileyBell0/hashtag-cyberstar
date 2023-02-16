@@ -16,6 +16,7 @@ function Navbar() {
           <img className="navbar__logo" src={logo} alt="Site Logo" />
         </button>
         <div className="navbar__buttons">
+          <NavbarButton title="home" dest="/" />
           <NavbarButton title="projects" dest="/projects" />
           <NavbarButton title="github" dest="/github" />
           <NavbarButton title="about" dest="/about" />

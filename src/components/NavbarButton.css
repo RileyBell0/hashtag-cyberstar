@@ -32,6 +32,21 @@
   color: var(--color-accent-blue);
 }
 
+.navbar-button:active {
+  border: 1px solid var(--color-accent-green);
+}
+.navbar-button:active .navbar-button__text {
+  border-left: 1px solid var(--color-accent-green);
+  color: var(--color-accent-green);
+  text-decoration: underline;
+  font-weight: bolder;
+}
+.navbar-button:active .navbar-button__arrow {
+  color: var(--color-accent-green);
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
 .navbar-button__text {
   padding-right: 15px;
   padding-left: 15px;
