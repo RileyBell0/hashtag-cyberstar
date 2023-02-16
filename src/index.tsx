@@ -4,6 +4,14 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import BucketList from "./pages/projects/BucketList";
+import Wumpus from "./pages/projects/Wumpus";
+import RayTracer from "./pages/projects/RayTracer";
+import Tupgorg from "./pages/projects/Tupgorg";
+import GitHub from "./pages/GitHub";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -13,6 +21,14 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/bucketlist" element={<BucketList />} />
+        <Route path="/wumpus" element={<Wumpus />} />
+        <Route path="/raytracer" element={<RayTracer />} />
+        <Route path="/tupgorg" element={<Tupgorg />} />
+        <Route path="/github" element={<GitHub />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

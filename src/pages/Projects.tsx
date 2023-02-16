@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 
-function GitHub() {
+function Projects() {
   return (
     <>
       <Navbar />
@@ -8,4 +8,4 @@ function GitHub() {
   );
 }
 
-export default GitHub;
+export default Projects;
