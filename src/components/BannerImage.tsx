@@ -17,7 +17,7 @@ function Banner({ src, alt, imgClass, className, children }: props) {
           alt={alt}
           className={"banner-image__img " + (imgClass ? imgClass : "")}
         />
-        <div className="banner-img__children">{children}</div>
+        {children}
       </div>
     </div>
   );

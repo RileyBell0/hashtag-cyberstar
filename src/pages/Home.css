@@ -40,6 +40,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 .home__header__title {
@@ -69,14 +70,27 @@ body {
 .home__about__separator {
   width: calc(50% - var(--card-padding) - 1px);
   position: absolute;
-  border-right: 2px solid var(--color-neutral-grey-);
+  border-right: 2px solid var(--color-neutral-grey);
   height: calc(100% - 2 * var(--card-padding));
+}
+
+.home__about__techs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  padding-top: 20px;
+
+  width: 100%;
 }
 
 .home__about__left {
   padding-right: 40px;
   width: 50%;
-  border-right: 1px solid var(--color-neutral-grey);
 }
 
 .home__about__title {
@@ -86,7 +100,6 @@ body {
 .home__about__right {
   padding-left: 40px;
   width: 50%;
-  border-left: 1px solid var(--color-neutral-grey);
 }
 
 .home__about__list {

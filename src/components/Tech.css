@@ -1,0 +1,23 @@
+.tech {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 5px;
+
+  width: 100px;
+}
+
+.tech__img {
+  width: 80px;
+  height: 80px;
+
+  object-fit: contain;
+}
+
+.tech__title {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}

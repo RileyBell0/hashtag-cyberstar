@@ -8,11 +8,17 @@ import Banner from "../components/BannerImage";
 import ascii_map_bg from "../images/ascii-map.png";
 import Divider from "../components/Divider";
 import BigTech from "../components/BigTech";
-import ts_icon from "../images/typescript-icon.png";
-import react_icon from "../images/react-icon.png";
-import css_icon from "../images/css-icon.png";
-import selfie from "../images/Selfie.png";
 import Stamp from "../components/Stamp";
+import selfie from "../images/Selfie.png";
+import ts_icon from "../images/typescript_icon.png";
+import react_icon from "../images/react_icon.png";
+import css_icon from "../images/css_icon.png";
+import cpp_icon from "../images/cpp_icon.png";
+import cs_icon from "../images/cs_icon.png";
+import python_icon from "../images/python_icon.png";
+import html_icon from "../images/html_icon.png";
+import Tech from "../components/Tech";
+import ts from "typescript";
 
 function Header() {
   return (
@@ -81,6 +87,14 @@ function AboutPostcard() {
             <p className="home__about__info-field">Victoria</p>
             <p className="home__about__info-field">Australia</p>
           </div>
+        </div>
+        <div className="home__about__techs">
+          <Tech src={cpp_icon} name="C++" />
+          <Tech src={cs_icon} name="C#" />
+          <Tech src={ts_icon} name="Typescript" />
+          <Tech src={python_icon} name="Python" />
+          <Tech src={css_icon} name="CSS" />
+          <Tech src={html_icon} name="HTML" />
         </div>
       </Card>
     </>
