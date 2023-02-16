@@ -9,11 +9,12 @@ function Navbar() {
   return (
     <>
       <div className="navbar">
-        <img
-          className="navbar__logo"
-          src={logo}
-          alt="Site Logo of a lowercase r followed by an underscore"
-        />
+        <button
+          className="navbar__logo-container"
+          onClick={() => navigate("/")}
+        >
+          <img className="navbar__logo" src={logo} alt="Site Logo" />
+        </button>
         <div className="navbar__buttons">
           <NavbarButton title="projects" dest="/projects" />
           <NavbarButton title="github" dest="/github" />

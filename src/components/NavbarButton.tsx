@@ -10,11 +10,10 @@ function NavbarButton({ title, dest }: props) {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="navbar-button__image" />
       <button className="navbar-button" onClick={() => navigate(dest)}>
-        {title}
+        <h4 className="navbar-button__arrow">&gt;</h4>
+        <h4 className="navbar-button__text">{title}</h4>
       </button>
-      <div className="navbar-button__arrow" />
     </div>
   );
 }

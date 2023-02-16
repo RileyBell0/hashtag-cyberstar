@@ -1,0 +1,16 @@
+.page-content {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  width: 100%;
+  min-width: 0px;
+  max-width: 1000px;
+
+  padding-left: 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  box-sizing: border-box;
+}

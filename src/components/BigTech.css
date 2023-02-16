@@ -1,0 +1,22 @@
+.big-tech {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 5px;
+
+  width: 120px;
+}
+
+.big-tech__img {
+  width: 100px;
+  height: 100px;
+
+  object-fit: contain;
+}
+
+.big-tech__title {
+  width: 100%;
+  text-align: center;
+}

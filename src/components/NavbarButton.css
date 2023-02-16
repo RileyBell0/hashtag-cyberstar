@@ -1,13 +1,54 @@
 .navbar-button {
-  width: fit-content;
-  padding: 10px;
-  border: 2px solid var(--color-neutral-light);
-  color: var(--color-neutral-light);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
   background-color: var(--color-neutral-dark);
+  border: 1px solid var(--color-neutral-light);
+  border-radius: 10px;
+  color: var(--color-neutral-light);
+
+  padding: 0;
+
   box-sizing: border-box;
 }
 
 .navbar-button:hover {
+  cursor: pointer;
+
   background-color: var(--color-neutral-light);
-  color: var(--color-neutral-dark);
+  border: 1px solid var(--color-accent-blue);
+}
+.navbar-button:hover .navbar-button__text {
+  border-left: 1px solid var(--color-accent-blue);
+  color: var(--color-accent-blue);
+}
+.navbar-button:hover .navbar-button__arrow {
+  color: var(--color-accent-blue);
+}
+
+.navbar-button__text {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 4px;
+  padding-top: 1px;
+  margin: 0;
+
+  height: 100%;
+
+  border-left: 1px solid var(--color-neutral-light);
+
+  box-sizing: border-box;
+}
+
+.navbar-button__arrow {
+  width: 25px;
+  margin: 0;
+
+  box-sizing: border-box;
 }
