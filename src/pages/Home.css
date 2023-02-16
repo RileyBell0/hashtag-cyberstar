@@ -33,6 +33,11 @@ body {
   width: max-content;
 
   font-size: 100px;
+  margin-bottom: 0;
+}
+.home__header__subtitle {
+  text-align: center;
+  font-size: 22.5px;
 }
 
 .home__about-container {
@@ -48,8 +53,21 @@ body {
   width: 50%;
   border-right: 1px solid var(--color-neutral-grey);
 }
+
 .home__about__right {
   padding-left: 40px;
   width: 50%;
   border-left: 1px solid var(--color-neutral-grey);
+}
+
+.home__about__list {
+  font-size: 18.75px;
+  color: var(--color-neutral-light);
+}
+
+.home__about__stamp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
 }

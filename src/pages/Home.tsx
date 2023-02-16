@@ -11,6 +11,8 @@ import BigTech from "../components/BigTech";
 import ts_icon from "../images/typescript-icon.png";
 import react_icon from "../images/react-icon.png";
 import css_icon from "../images/css-icon.png";
+import selfie from "../images/Selfie.png";
+import Stamp from "../components/Stamp";
 
 function Header() {
   return (
@@ -21,7 +23,10 @@ function Header() {
         imgClass="home__header__img"
         className="home__header"
       >
-        <h1 className="home__header__title">riley bell_</h1>
+        <div>
+          <h1 className="home__header__title">riley bell_</h1>
+          <p className="home__header__subtitle">TODO: add NOT_FOUND page</p>
+        </div>
         <div className="home__header__tech-list">
           <BigTech src={ts_icon} name="Typescript" />
           <h1 className="home__header__tech-list__separator">-</h1>
@@ -46,7 +51,7 @@ function AboutPostcard() {
               I’m a Fullstack developer with solid experience developing web
               applications using the MERN stack. I have experience with
             </p>
-            <ul>
+            <ul className="home__about__list">
               <li>
                 <p>Leading an Agile Scrum/Kanban Team</p>
               </li>
@@ -67,7 +72,9 @@ function AboutPostcard() {
           </div>
 
           <div className="home__about__right">
-            <h3>test</h3>
+            <div className="home__about__stamp">
+              <Stamp src={selfie} alt="Image of Riley Bell" />
+            </div>
           </div>
         </div>
       </Card>
