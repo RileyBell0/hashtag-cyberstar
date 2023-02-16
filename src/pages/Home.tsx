@@ -43,10 +43,11 @@ function Header() {
 function AboutPostcard() {
   return (
     <>
-      <Card>
+      <Card className="home__about">
+        <div className="home__about__separator" />
         <div className="home__about-container">
           <div className="home__about__left">
-            <h3>about_me</h3>
+            <h3 className="home__about__title">about_me</h3>
             <p>
               I’m a Fullstack developer with solid experience developing web
               applications using the MERN stack. I have experience with
@@ -75,6 +76,10 @@ function AboutPostcard() {
             <div className="home__about__stamp">
               <Stamp src={selfie} alt="Image of Riley Bell" />
             </div>
+            <p className="home__about__info-field">Riley Bell</p>
+            <p className="home__about__info-field">Melbourne</p>
+            <p className="home__about__info-field">Victoria</p>
+            <p className="home__about__info-field">Australia</p>
           </div>
         </div>
       </Card>
@@ -87,6 +92,7 @@ function Home() {
     <>
       <Navbar />
       <Page>
+        <div className="home__bg" />
         <Header />
 
         <PageContent>

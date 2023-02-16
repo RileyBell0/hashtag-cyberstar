@@ -2,10 +2,13 @@ import "./Card.css";
 
 interface props {
   children: any;
+  className: string;
 }
 
-function Card({ children }: props) {
-  return <div className="card">{children}</div>;
+function Card({ children, className }: props) {
+  return (
+    <div className={"card " + (className ? className : "")}>{children}</div>
+  );
 }
 
 export default Card;

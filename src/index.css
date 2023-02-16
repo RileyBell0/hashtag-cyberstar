@@ -13,6 +13,8 @@ body {
   --color-neutral-dark: #333333;
   --color-accent-blue: #397ca8;
   --color-accent-green: #1d7b56;
+
+  --card-padding: 50px;
 }
 
 code {
