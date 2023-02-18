@@ -1,20 +1,15 @@
 import "./Navbar.css";
 import NavbarButton from "./NavbarButton";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../images/LOGO_light.png";
 
 function Navbar() {
-  const navigate = useNavigate();
-
   return (
     <>
       <div className="navbar">
-        <button
-          className="navbar__logo-container"
-          onClick={() => navigate("/")}
-        >
+        <Link className="navbar__logo-container" to="/">
           <img className="navbar__logo" src={logo} alt="Site Logo" />
-        </button>
+        </Link>
         <div className="navbar__buttons">
           <NavbarButton title="home" dest="/" />
           <NavbarButton title="projects" dest="/projects" />

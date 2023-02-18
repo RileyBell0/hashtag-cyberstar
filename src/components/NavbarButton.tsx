@@ -1,5 +1,5 @@
 import "./NavbarButton.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface props {
   title: string;
@@ -7,13 +7,12 @@ interface props {
 }
 
 function NavbarButton({ title, dest }: props) {
-  const navigate = useNavigate();
   return (
     <div>
-      <button className="navbar-button" onClick={() => navigate(dest)}>
+      <Link to={dest} className="navbar-button">
         <h5 className="navbar-button__arrow">&gt;</h5>
         <h5 className="navbar-button__text">{title}</h5>
-      </button>
+      </Link>
     </div>
   );
 }
