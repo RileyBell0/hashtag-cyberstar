@@ -1,0 +1,11 @@
+.box {
+  position: relative;
+
+  width: 100%;
+
+  padding: var(--card-padding);
+
+  border: 2px solid var(--color-neutral-grey);
+
+  box-sizing: border-box;
+}

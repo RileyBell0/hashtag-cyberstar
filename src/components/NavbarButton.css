@@ -22,18 +22,23 @@
   cursor: pointer;
 
   background-color: var(--color-neutral-light);
+  outline: 2px solid var(--color-accent-blue);
   border: 1px solid var(--color-accent-blue);
 }
 .navbar-button:hover .navbar-button__text {
   border-left: 1px solid var(--color-accent-blue);
   color: var(--color-accent-blue);
+  font-weight: bolder;
 }
 .navbar-button:hover .navbar-button__arrow {
   color: var(--color-accent-blue);
+  font-weight: bolder;
 }
 
 .navbar-button:active {
+  outline: 2px solid var(--color-accent-green);
   border: 1px solid var(--color-accent-green);
+  background-color: var(--color-neutral-light);
 }
 .navbar-button:active .navbar-button__text {
   border-left: 1px solid var(--color-accent-green);

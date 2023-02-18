@@ -1,5 +1,5 @@
 body {
-  background-color: var(--color-neutral-dark);
+  background-color: var(--color-neutral-dark) !important;
   height: 100%;
 }
 .home__bg {
@@ -14,6 +14,14 @@ body {
   opacity: 0.2;
 
   z-index: -1000;
+}
+
+.home__header__animated-line {
+  display: inline;
+}
+
+.home__header__animated-line--disabled {
+  opacity: 0;
 }
 
 .home__header__tech-list {
@@ -81,8 +89,6 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  gap: 20px;
-
   padding-top: 20px;
 
   width: 100%;
@@ -102,7 +108,7 @@ body {
   width: 50%;
 }
 
-.home__about__list {
+.home__bullet-list {
   font-size: 18.75px;
   color: var(--color-neutral-light);
 }
@@ -118,4 +124,95 @@ body {
   border-bottom: 1px solid var(--color-neutral-grey);
   color: var(--color-neutral-grey);
   font-size: 30px;
+}
+.home__featured__info {
+  width: 50%;
+}
+.home__featured__info__title {
+  margin-top: 0;
+}
+
+.home__featured__techs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  padding-top: 20px;
+
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+.home__featured__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.home__featured__carousel__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50%;
+}
+.home__featured__carousel img {
+  display: block;
+}
+
+.carousel {
+  position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  box-sizing: border-box;
+}
+
+.carousel .control-dots {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+}
+.hidden {
+  visibility: hidden;
+}
+.carousel__next {
+  height: 82.2%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  right: 0;
+
+  width: 10%;
+  max-width: 80px;
+  padding: 2.5%;
+  filter: brightness(50%);
+}
+.carousel__prev {
+  height: 82.2%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+
+  width: 10%;
+  max-width: 80px;
+  padding: 2.5%;
+  filter: brightness(50%);
+}
+.carousel__next:hover {
+  cursor: pointer;
+  filter: brightness(100%);
+}
+.carousel__prev:hover {
+  cursor: pointer;
+  filter: brightness(100%);
 }
