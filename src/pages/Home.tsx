@@ -288,17 +288,18 @@ function FeaturedProject() {
 function Home() {
   return (
     <>
-      <Navbar />
-      <Page>
-        <div className="home__bg" />
-        <Header />
+      <Footer>
+        <Navbar />
+        <Page>
+          <div className="home__bg" />
+          <Header />
 
-        <PageContent>
-          <AboutPostcard />
-          <FeaturedProject />
-        </PageContent>
-      </Page>
-      <Footer />
+          <PageContent>
+            <AboutPostcard />
+            <FeaturedProject />
+          </PageContent>
+        </Page>
+      </Footer>
     </>
   );
 }

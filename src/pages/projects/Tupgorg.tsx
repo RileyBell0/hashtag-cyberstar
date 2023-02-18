@@ -1,9 +1,12 @@
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
 function Tupgorg() {
   return (
     <>
-      <Navbar />
+      <Footer>
+        <Navbar />
+      </Footer>
     </>
   );
 }

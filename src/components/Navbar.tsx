@@ -10,13 +10,13 @@ function Navbar() {
         <Link className="navbar__logo-container" to="/">
           <img className="navbar__logo" src={logo} alt="Site Logo" />
         </Link>
-        <div className="navbar__buttons">
+        <nav className="navbar__buttons">
           <NavbarButton title="home" dest="/" />
           <NavbarButton title="projects" dest="/projects" />
           <NavbarButton title="github" dest="/github" />
           <NavbarButton title="about" dest="/about" />
           <NavbarButton title="contact" dest="/contact" />
-        </div>
+        </nav>
       </div>
     </>
   );

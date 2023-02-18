@@ -1,3 +1,9 @@
+.footer__placement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
 .footer {
   display: flex;
   flex-direction: row;
