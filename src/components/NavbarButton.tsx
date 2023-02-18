@@ -11,8 +11,8 @@ function NavbarButton({ title, dest }: props) {
   return (
     <div>
       <button className="navbar-button" onClick={() => navigate(dest)}>
-        <h4 className="navbar-button__arrow">&gt;</h4>
-        <h4 className="navbar-button__text">{title}</h4>
+        <h5 className="navbar-button__arrow">&gt;</h5>
+        <h5 className="navbar-button__text">{title}</h5>
       </button>
     </div>
   );

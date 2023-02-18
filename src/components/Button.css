@@ -1,0 +1,66 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.button:hover {
+  background-color: var(--color-neutral-light);
+  cursor: pointer;
+}
+.button:hover .button__text {
+  color: var(--color-accent-blue);
+  border: 3px solid var(--color-accent-blue);
+  text-decoration: underline;
+}
+.button:hover .button__submit {
+  color: var(--color-accent-blue);
+  border: 3px solid var(--color-accent-blue);
+  border-left: transparent;
+  text-decoration: underline;
+}
+.button:active {
+  background-color: var(--color-neutral-light);
+  cursor: pointer;
+}
+.button:active .button__text {
+  color: var(--color-accent-green);
+  border: 3px solid var(--color-accent-green);
+  font-weight: bolder;
+  text-decoration: underline;
+  text-decoration: underline;
+}
+.button:active .button__submit {
+  color: var(--color-accent-green);
+  border: 3px solid var(--color-accent-green);
+  font-weight: bolder;
+  border-left: transparent;
+  text-decoration: underline;
+  text-decoration: underline;
+}
+
+.button__text {
+  margin: 0;
+  height: 75px;
+
+  padding: 5px 20px;
+
+  border: 3px solid var(--color-neutral-light);
+  box-sizing: border-box;
+}
+.button__submit {
+  margin: 0;
+  height: 75px;
+
+  padding: 5px 20px;
+  padding-top: 8px;
+
+  border: 3px solid var(--color-neutral-light);
+  border-left: transparent;
+  box-sizing: border-box;
+}

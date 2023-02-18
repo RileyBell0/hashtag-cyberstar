@@ -14,6 +14,9 @@ body {
   --color-neutral-dark: #1e1e1e;
   --color-accent-blue: #397ca8;
   --color-accent-green: #1d7b56;
+  --content-width: 1000px;
+
+  --p-size: 18.75px;
 
   --card-padding: 50px;
 }
@@ -46,6 +49,10 @@ h3 {
   font-size: 37.5px;
 }
 h4 {
+  font-family: "Space Mono", monospace;
+  font-size: 22.5px;
+}
+h5 {
   font-family: "Space Mono", monospace;
   font-size: 15px;
 }

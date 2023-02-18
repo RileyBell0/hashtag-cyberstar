@@ -33,6 +33,7 @@ import { Carousel } from "react-responsive-carousel";
 
 import arrow_next from "../images/arrow_next.png";
 import arrow_prev from "../images/arrow_prev.png";
+import Footer from "../components/Footer";
 
 function Header() {
   const [toggle, setToggle] = useState(false);
@@ -297,6 +298,7 @@ function Home() {
           <FeaturedProject />
         </PageContent>
       </Page>
+      <Footer />
     </>
   );
 }
