@@ -4,7 +4,6 @@ import github from "../images/github_light_icon.png";
 import linkedin from "../images/linkedin_light_icon.png";
 import email from "../images/email_light_icon.png";
 import Button from "./Button";
-import { open } from "../util/Navigation";
 import { Link } from "react-router-dom";
 
 function Footer() {
