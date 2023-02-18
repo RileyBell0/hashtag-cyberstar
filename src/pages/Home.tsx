@@ -220,7 +220,7 @@ function FeaturedProject() {
                   className={`${hasNext ? "" : "hidden"} carousel__next`}
                   onClick={clickHandler}
                 >
-                  <img src={arrow_next} />
+                  <img src={arrow_next} alt="Next Button" />
                 </div>
               );
             }}
@@ -231,7 +231,7 @@ function FeaturedProject() {
                   className={`${hasPrev ? "" : "hidden"} carousel__prev`}
                   onClick={clickHandler}
                 >
-                  <img src={arrow_prev} />
+                  <img src={arrow_prev} alt="Previous Button" />
                 </div>
               );
             }}
