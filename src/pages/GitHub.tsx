@@ -1,13 +1,10 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Page from "../components/Page";
 
 function GitHub() {
   return (
-    <>
-      <Footer>
-        <Navbar />
-      </Footer>
-    </>
+    <Page>
+      <h1>Github</h1>
+    </Page>
   );
 }
 

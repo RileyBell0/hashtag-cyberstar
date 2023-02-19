@@ -1,13 +1,10 @@
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Page from "../components/Page";
 
 function Projects() {
   return (
-    <>
-      <Footer>
-        <Navbar />
-      </Footer>
-    </>
+    <Page>
+      <h1>Projects</h1>
+    </Page>
   );
 }
 

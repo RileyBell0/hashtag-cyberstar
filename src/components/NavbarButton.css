@@ -21,13 +21,8 @@
 
 .navbar-button:hover {
   cursor: pointer;
-
-  background-color: var(--color-neutral-light);
-  outline: 2px solid var(--color-accent-blue);
-  border: 1px solid var(--color-accent-blue);
 }
 .navbar-button:hover .navbar-button__text {
-  border-left: 1px solid var(--color-accent-blue);
   color: var(--color-accent-blue);
   font-weight: bolder;
   text-decoration: underline;
@@ -38,13 +33,7 @@
   text-decoration: underline;
 }
 
-.navbar-button:active {
-  outline: 2px solid var(--color-accent-green);
-  border: 1px solid var(--color-accent-green);
-  background-color: var(--color-neutral-light);
-}
 .navbar-button:active .navbar-button__text {
-  border-left: 1px solid var(--color-accent-green);
   color: var(--color-accent-green);
   text-decoration: underline;
   font-weight: bolder;

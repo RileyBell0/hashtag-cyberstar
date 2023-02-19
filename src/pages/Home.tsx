@@ -1,9 +1,8 @@
 import "./Home.css";
 
-import Navbar from "../components/Navbar";
 import Page from "../components/Page";
 import PageContent from "../components/PageContent";
-import Box from "../components/Box";
+import Card from "../components/Card";
 import Banner from "../components/BannerImage";
 import ascii_map_bg from "../images/ascii-map.png";
 import Divider from "../components/Divider";
@@ -33,7 +32,6 @@ import { Carousel } from "react-responsive-carousel";
 
 import arrow_next from "../images/arrow_next.png";
 import arrow_prev from "../images/arrow_prev.png";
-import Footer from "../components/Footer";
 
 function Header() {
   const [toggle, setToggle] = useState(false);
@@ -81,7 +79,7 @@ function Header() {
 function AboutPostcard() {
   return (
     <>
-      <Box className="home__about">
+      <Card className="home__about">
         <div className="home__about__separator" />
         <div className="home__about-container">
           <div className="home__about__left">
@@ -128,7 +126,7 @@ function AboutPostcard() {
           <Tech src={css_icon} name="CSS" />
           <Tech src={html_icon} name="HTML" />
         </div>
-      </Box>
+      </Card>
     </>
   );
 }
@@ -287,20 +285,14 @@ function FeaturedProject() {
 
 function Home() {
   return (
-    <>
-      <Footer>
-        <Navbar />
-        <Page>
-          <div className="home__bg" />
-          <Header />
+    <Page background="home__bg">
+      <Header />
 
-          <PageContent>
-            <AboutPostcard />
-            <FeaturedProject />
-          </PageContent>
-        </Page>
-      </Footer>
-    </>
+      <PageContent>
+        <AboutPostcard />
+        <FeaturedProject />
+      </PageContent>
+    </Page>
   );
 }
 

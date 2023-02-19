@@ -1,13 +1,13 @@
-import "./Box.css";
+import "./Card.css";
 
 interface props {
   children: any;
-  className: string;
+  className?: string;
 }
 
 function Card({ children, className }: props) {
   return (
-    <div className={"box " + (className ? className : "")}>{children}</div>
+    <div className={"card " + (className ? className : "")}>{children}</div>
   );
 }
 

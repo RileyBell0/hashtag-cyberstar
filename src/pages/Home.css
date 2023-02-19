@@ -3,17 +3,8 @@ body {
   height: 100%;
 }
 .home__bg {
-  position: absolute;
-
-  height: 100%;
-  width: 100%;
-
   background-image: url("../images/bg_home.png");
-
-  filter: invert();
-  opacity: 0.2;
-
-  z-index: -1000;
+  opacity: 0.06;
 }
 
 .home__header__animated-line {
