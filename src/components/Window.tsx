@@ -6,7 +6,7 @@ interface props {
   info?: string[];
 }
 
-function Window({ children }: props) {
+function Window({ children, title, info }: props) {
   return (
     <div className="window">
       <div className="window__title-bar">
@@ -17,17 +17,22 @@ function Window({ children }: props) {
           <div className="window__title-bar__line" />
         </div>
         <div className="window__title-bar__content">
-          <h3 className="window__title-bar__content__title">
-            featured_project
-          </h3>
+          {title !== undefined ? (
+            <h3 className="window__title-bar__content__title">{title}</h3>
+          ) : (
+            ""
+          )}
+
           <div className="window__title-bar__content__square" />
         </div>
       </div>
 
       <div className="window__info-bar">
-        <p className="window__info-bar__text">items: 1</p>
-        <p className="window__info-bar__text">2023</p>
-        <p className="window__info-bar__text">University of Melbourne</p>
+        {info !== undefined
+          ? info.map((value: string) => (
+              <p className="window__info-bar__text">{value}</p>
+            ))
+          : ""}
       </div>
       <div className="window__content">{children}</div>
     </div>
