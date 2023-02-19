@@ -1,0 +1,16 @@
+.projects__bg {
+  background-image: url("../images/grid_bg.png");
+  opacity: 0.05;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow-y: auto;
+}
+.projects__results {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}

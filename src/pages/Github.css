@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--color-neutral-dark);
 }
 
 .github__no-margin {
@@ -75,6 +76,8 @@
   text-align: center;
   padding-right: 20px;
   color: var(--color-neutral-grey);
+  padding-left: 20px;
+  border-left: 1px solid var(--color-neutral-grey);
 }
 #github__featured__legend__link {
   width: 60px;
@@ -98,4 +101,9 @@
 
   overflow-y: scroll;
   box-sizing: border-box;
+}
+
+.github_bg {
+  background-image: url("../images//grid_bg.png");
+  opacity: 0.05;
 }

@@ -1,13 +1,10 @@
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
+import Page from "../../components/Page";
 
 function BucketList() {
   return (
-    <>
-      <Footer>
-        <Navbar />
-      </Footer>
-    </>
+    <Page>
+      <h1>bucket list</h1>
+    </Page>
   );
 }
 export default BucketList;

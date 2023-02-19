@@ -4,7 +4,7 @@ import Card from "../components/Card";
 import Page from "../components/Page";
 import PageContent from "../components/PageContent";
 import Button from "../components/Button";
-import email from "../images/email_light_icon.png";
+import email from "../images/email_icon.png";
 import linkedin from "../images/linkedin_light_icon.png";
 
 function Contact() {

@@ -12,6 +12,7 @@ import GitHub from "./pages/GitHub";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import ThisSite from "./pages/projects/ThisSite";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -22,10 +23,11 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/bucketlist" element={<BucketList />} />
-        <Route path="/wumpus" element={<Wumpus />} />
-        <Route path="/raytracer" element={<RayTracer />} />
-        <Route path="/tupgorg" element={<Tupgorg />} />
+        <Route path="/projects/bucketlist" element={<BucketList />} />
+        <Route path="/projects/wumpus" element={<Wumpus />} />
+        <Route path="/projects/raytracer" element={<RayTracer />} />
+        <Route path="/projects/tupgorg" element={<Tupgorg />} />
+        <Route path="/projects/this-site" element={<ThisSite />} />
         <Route path="/github" element={<GitHub />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

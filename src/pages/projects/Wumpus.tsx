@@ -1,13 +1,10 @@
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
+import Page from "../../components/Page";
 
 function Wumpus() {
   return (
-    <>
-      <Footer>
-        <Navbar />
-      </Footer>
-    </>
+    <Page>
+      <h1>wumpus</h1>
+    </Page>
   );
 }
 

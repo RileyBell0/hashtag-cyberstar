@@ -1,13 +1,10 @@
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
+import Page from "../../components/Page";
 
 function RayTracer() {
   return (
-    <>
-      <Footer>
-        <Navbar />
-      </Footer>
-    </>
+    <Page>
+      <h1>ray tracer</h1>
+    </Page>
   );
 }
 

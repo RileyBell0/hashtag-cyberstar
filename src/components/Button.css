@@ -26,12 +26,10 @@
 }
 .button:active .button__text {
   color: var(--color-accent-green);
-  font-weight: bolder;
   text-decoration: underline;
 }
 .button:active .button__submit {
   color: var(--color-accent-green);
-  font-weight: bolder;
   text-decoration: underline;
 }
 

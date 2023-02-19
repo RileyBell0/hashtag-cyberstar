@@ -83,6 +83,9 @@
 }
 
 .window__info-bar__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   width: 100%;
   overflow: hidden;

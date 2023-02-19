@@ -8,12 +8,14 @@
 }
 .page__bg {
   position: absolute;
+  top: -60px;
 
   min-height: 100vh;
-  height: 100%;
+  height: calc(100% + 60px);
   width: 100%;
 
   background-repeat: repeat;
 
+  overflow: hidden;
   z-index: -1000;
 }

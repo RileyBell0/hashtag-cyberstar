@@ -1,11 +1,11 @@
 import Page from "../../components/Page";
 
-function Tupgorg() {
+function ThisSite() {
   return (
     <Page>
-      <h1>tupgorg</h1>
+      <h1>this site</h1>
     </Page>
   );
 }
 
-export default Tupgorg;
+export default ThisSite;
