@@ -10,7 +10,7 @@ body {
 
   --color-neutral-light: #f1f1f1;
   --color-neutral-grey: #707070;
-  --color-neutral-dark: #333333;
+  --color-neutral-dark-grey: #2b2b2b;
   --color-neutral-dark: #1e1e1e;
   --color-accent-blue: #397ca8;
   --color-accent-green: #1d7b56;
@@ -61,4 +61,28 @@ p {
   color: var(--color-neutral-light);
   font-family: "Quicksand", sans-serif;
   font-size: 18.75px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-neutral-dark-grey);
+  box-sizing: border-box;
+  border-left: 1px solid var(--color-neutral-grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  box-sizing: border-box;
+  border: 2px solid var(--color-neutral-grey);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-grey);
 }

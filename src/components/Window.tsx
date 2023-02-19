@@ -2,11 +2,12 @@ import "./Window.css";
 
 interface props {
   children: any;
+  className?: string;
   title?: string;
   info?: string[];
 }
 
-function Window({ children, title, info }: props) {
+function Window({ children, title, info, className }: props) {
   return (
     <div className="window">
       <div className="window__title-bar">
@@ -30,11 +31,17 @@ function Window({ children, title, info }: props) {
       <div className="window__info-bar">
         {info !== undefined
           ? info.map((value: string) => (
-              <p className="window__info-bar__text">{value}</p>
+              <h5 className="window__info-bar__text">{value.toLowerCase()}</h5>
             ))
           : ""}
       </div>
-      <div className="window__content">{children}</div>
+      <div
+        className={`${
+          className !== undefined ? className : ""
+        } window__content`}
+      >
+        {children}
+      </div>
     </div>
   );
 }

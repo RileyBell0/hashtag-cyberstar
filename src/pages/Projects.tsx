@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+import Card from "../components/Card";
 import Page from "../components/Page";
 import PageContent from "../components/PageContent";
 import Window from "../components/Window";

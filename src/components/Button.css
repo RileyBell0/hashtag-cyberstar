@@ -15,12 +15,10 @@
 }
 .button:hover .button__text {
   color: var(--color-accent-blue);
-  text-decoration: underline;
 }
 .button:hover .button__submit {
   color: var(--color-accent-blue);
   border-left: transparent;
-  text-decoration: underline;
 }
 
 .button:active {

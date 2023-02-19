@@ -187,7 +187,7 @@ function FeaturedImagesDiv() {
 }
 function FeaturedProject() {
   return (
-    <Window title="featured_project" info={["Items: 1", "2022", "University"]}>
+    <Window title="featured_project" info={["1 item", "2022", "University"]}>
       <div className="home__featured__container">
         <div className="home__featured__info">
           <h3 className="home__featured__info__title">bucket_list</h3>
