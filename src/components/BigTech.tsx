@@ -1,4 +1,4 @@
-import "./BigTech.css";
+import "./styles/BigTech.css";
 
 interface props {
   src: string;

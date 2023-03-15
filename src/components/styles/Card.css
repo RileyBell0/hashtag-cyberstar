@@ -6,6 +6,7 @@
   padding: var(--card-padding);
 
   border: 2px solid var(--color-neutral-grey);
+  background-color: var(--card-bg);
 
   box-sizing: border-box;
 }

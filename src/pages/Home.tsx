@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./styles/Home.css";
 
 import Page from "../components/Page";
 import PageContent from "../components/PageContent";
@@ -10,6 +10,7 @@ import BigTech from "../components/BigTech";
 import Stamp from "../components/Stamp";
 import selfie from "../images/Selfie.png";
 import ts_icon from "../images/typescript_icon.png";
+import js_icon from "../images/javascript_icon.png";
 import react_icon from "../images/react_icon.png";
 import css_icon from "../images/css_icon.png";
 import cpp_icon from "../images/cpp_icon.png";
@@ -49,26 +50,17 @@ function Header() {
         imgClass="home__header__img"
         className="home__header"
       >
+        {/* Header Text */}
         <div>
-          <h1 className="home__header__title">
-            riley bell
-            <h1
-              className={
-                "home__header__animated-line " +
-                (toggle ? "" : "home__header__animated-line--disabled")
-              }
-            >
-              _
-            </h1>
-          </h1>
-          <p className="home__header__subtitle">TODO: add NOT_FOUND page</p>
+          <h1 className="home__header__title">riley_bell</h1>
+          <p className="home__header__subtitle">Fullstack Developer</p>
         </div>
+
+        {/* Header Techs */}
         <div className="home__header__tech-list">
-          <BigTech src={ts_icon} name="Typescript" />
-          <h1 className="home__header__tech-list__separator">-</h1>
-          <BigTech src={react_icon} name="React" />
-          <h1 className="home__header__tech-list__separator">-</h1>
-          <BigTech src={css_icon} name="CSS" />
+          <Tech src={ts_icon} name="Typescript" />
+          <Tech src={react_icon} name="React" />
+          <Tech src={css_icon} name="CSS" />
         </div>
       </Banner>
       <Divider />
@@ -79,9 +71,21 @@ function Header() {
 function AboutPostcard() {
   return (
     <>
-      <Card className="home__about">
-        <div className="home__about__separator" />
-        <div className="home__about-container">
+      <Card>
+        {/* About me */}
+        <div className="home__about">
+          {/* Personal Info */}
+          <div className="home__about__right">
+            <div className="home__about__stamp">
+              <Stamp src={selfie} alt="Image of Riley Bell" />
+            </div>
+            <p className="home__about__info-field">Riley Bell</p>
+            <p className="home__about__info-field">Melbourne</p>
+            <p className="home__about__info-field">Victoria</p>
+            <p className="home__about__info-field">Australia</p>
+          </div>
+
+          {/* About Me Text */}
           <div className="home__about__left">
             <h3 className="home__about__title">about_me</h3>
             <p>
@@ -107,17 +111,8 @@ function AboutPostcard() {
               section, or check out my attached resume.
             </p>
           </div>
-
-          <div className="home__about__right">
-            <div className="home__about__stamp">
-              <Stamp src={selfie} alt="Image of Riley Bell" />
-            </div>
-            <p className="home__about__info-field">Riley Bell</p>
-            <p className="home__about__info-field">Melbourne</p>
-            <p className="home__about__info-field">Victoria</p>
-            <p className="home__about__info-field">Australia</p>
-          </div>
         </div>
+        {/* About Me Tech Summary */}
         <div className="home__about__techs">
           <Tech src={cpp_icon} name="C++" />
           <Tech src={cs_icon} name="C#" />
@@ -131,63 +126,9 @@ function AboutPostcard() {
   );
 }
 
-// eslint-disable-next-line
-function FeaturedImages() {
-  return (
-    <>
-      <img src={bucket_list_welcome} alt="Welcome / Home page in Bucket List" />
-      <img src={bucket_list_login} alt="Log-in page for Bucket List" />
-      <img
-        src={bucket_list_destinations}
-        alt="Logged-in Home Page in Bucket List, displaying all Destinations"
-      />
-      <img src={bucket_list_trip} alt="Trip Information in Bucket List" />
-      <img
-        src={bucket_list_map}
-        alt="Map page in Bucket List, displaying destinations on a map"
-      />
-      <img src={bucket_list_settings} alt="Settings page in Bucket List" />
-    </>
-  );
-}
-
-// eslint-disable-next-line
-function FeaturedImagesDiv() {
-  return (
-    <>
-      <div>
-        <img
-          src={bucket_list_welcome}
-          alt="Welcome / Home page in Bucket List"
-        />
-      </div>
-      <div>
-        <img src={bucket_list_login} alt="Log-in page for Bucket List" />
-      </div>
-      <div>
-        <img
-          src={bucket_list_destinations}
-          alt="Logged-in Home Page in Bucket List, displaying all Destinations"
-        />
-      </div>
-      <div>
-        <img src={bucket_list_trip} alt="Trip Information in Bucket List" />
-      </div>
-      <div>
-        <img
-          src={bucket_list_map}
-          alt="Map page in Bucket List, displaying destinations on a map"
-        />
-      </div>
-      <div>
-        <img src={bucket_list_settings} alt="Settings page in Bucket List" />
-      </div>
-    </>
-  );
-}
 function FeaturedProject() {
   return (
-    <Window title="featured_project" info={["1 item", "2022", "University"]}>
+    <Window title="featured" info={["1 item", "2022", "university"]}>
       <div className="home__featured__container">
         <div className="home__featured__info">
           <h3 className="home__featured__info__title">bucket_list</h3>
@@ -223,7 +164,6 @@ function FeaturedProject() {
               );
             }}
             renderArrowPrev={(clickHandler, hasPrev) => {
-              console.log(hasPrev);
               return (
                 <div
                   className={`${hasPrev ? "" : "hidden"} carousel__prev`}
@@ -275,7 +215,7 @@ function FeaturedProject() {
         <Tech src={mongodb_icon} name="MongoDB" />
         <Tech src={nodejs_icon} name="NodeJS" />
         <Tech src={react_icon} name="React" />
-        <Tech src={ts_icon} name="Typescript" />
+        <Tech src={js_icon} name="Javascript" />
         <Tech src={css_icon} name="CSS" />
         <Tech src={html_icon} name="HTML" />
       </div>

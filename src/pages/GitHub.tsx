@@ -1,4 +1,4 @@
-import "./Github.css";
+import "./styles/Github.css";
 
 import Button from "../components/Button";
 import Card from "../components/Card";
@@ -11,6 +11,7 @@ import bucket_icon from "../images/bucket_icon_light.png";
 import c_icon from "../images/c_icon.png";
 import site_icon from "../images/LOGO_light.png";
 import wumpus_icon from "../images/wumpus_icon.png";
+import ProjectLegend from "../components/ProjectLegend";
 
 function GitHub() {
   const GitHubLink = () => {
@@ -28,29 +29,6 @@ function GitHub() {
     );
   };
 
-  const GitHubLegend = () => {
-    return (
-      <div className="github__featured__legend">
-        <div className="github__featured__legend__group">
-          <h4 id="github__featured__legend__icon" className="github__no-margin">
-            icon
-          </h4>
-          <h4 id="github__featured__legend__name" className="github__no-margin">
-            name
-          </h4>
-        </div>
-        <div className="github__featured__legend__group">
-          <h4 id="github__featured__legend__date" className="github__no-margin">
-            date
-          </h4>
-          <h4 id="github__featured__legend__link" className="github__no-margin">
-            {">"}
-          </h4>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <Page background="github_bg">
       <PageContent>
@@ -58,17 +36,17 @@ function GitHub() {
 
         <Window
           title="featured"
-          info={["4 Items", "4 Languages", "1 Active"]}
+          info={["4 Items", "", "1 Active"]}
           className="github__featured"
         >
-          <GitHubLegend />
+          <ProjectLegend />
           <div className="github__featured__projects">
             <ProjectTab
               dest="https://github.com/RileyBell0/hashtag-cyberstar"
               target="_blank"
               src={site_icon}
               alt="This Website"
-              name="this-site"
+              name="this_site"
               date="2023"
             />
             <ProjectTab
@@ -97,16 +75,16 @@ function GitHub() {
             />
           </div>
           <div className="github__featured__results">
-            <h5 className="github__featured__results__text">4 results found</h5>
+            <h6 className="github__featured__results__text">4 results found</h6>
           </div>
         </Window>
 
         <Window
           title="active"
-          info={["2 Items", "2 Languages", "2 Active"]}
+          info={["2 Items", "", "2 Active"]}
           className="github__featured"
         >
-          <GitHubLegend />
+          <ProjectLegend />
           <div className="github__featured__projects">
             <ProjectTab
               dest="https://github.com/RileyBell0/hashtag-cyberstar"
@@ -117,7 +95,7 @@ function GitHub() {
               date="2023"
             />
             <ProjectTab
-              dest="https://github.com/RileyBell0/BucketList-Frontend"
+              dest="https://github.com/RileyBell0/Wumpus"
               target="_blank"
               src={wumpus_icon}
               alt="Wumpus"
@@ -126,7 +104,7 @@ function GitHub() {
             />
           </div>
           <div className="github__featured__results">
-            <h5 className="github__featured__results__text">2 results found</h5>
+            <h6 className="github__featured__results__text">2 results found</h6>
           </div>
         </Window>
       </PageContent>

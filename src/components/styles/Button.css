@@ -34,6 +34,9 @@
 }
 
 .button__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   height: 75px;
 
@@ -50,6 +53,9 @@
 }
 
 .button__submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   height: 75px;
 
@@ -74,4 +80,27 @@
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .button__icon-container {
+    width: 50px;
+    height: 50px;
+    padding: 7.5px;
+  }
+  .button__text {
+    padding: 7.5px 5px;
+    font-size: 18.75px;
+    height: 50px;
+  }
+  .button__submit {
+    height: 50px;
+    padding: 7.5px;
+    font-size: 18.75px;
+  }
+  .button {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
 }

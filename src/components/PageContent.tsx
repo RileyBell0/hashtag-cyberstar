@@ -1,4 +1,4 @@
-import "./PageContent.css";
+import "./styles/PageContent.css";
 
 interface props {
   children: any;

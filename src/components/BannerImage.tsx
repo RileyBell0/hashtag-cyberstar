@@ -1,4 +1,4 @@
-import "./BannerImage.css";
+import "./styles/BannerImage.css";
 
 interface props {
   src: string;
@@ -8,17 +8,11 @@ interface props {
   children?: any;
 }
 
-function Banner({ src, alt, imgClass, className, children }: props) {
+function Banner({ src, alt, className, children, imgClass }: props) {
   return (
-    <div className="banner-image__bg">
-      <div className={"banner-image " + (className ? className : "")}>
-        <img
-          src={src}
-          alt={alt}
-          className={"banner-image__img " + (imgClass ? imgClass : "")}
-        />
-        {children}
-      </div>
+    <div className={"banner-image " + (className ? className + " " : "")}>
+      <img src={src} alt={alt} className={"banner-image__bg " + imgClass}></img>
+      <div className="banner-content">{children}</div>
     </div>
   );
 }

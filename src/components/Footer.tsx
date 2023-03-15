@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./styles/Footer.css";
 import logo from "../images/LOGO_light.png";
 import github from "../images/github_light_icon.png";
 import linkedin from "../images/linkedin_light_icon.png";
@@ -29,7 +29,7 @@ function Footer({ children }: props) {
               </Link>
               <p className="footer__content__my-info__text">Riley Bell</p>
               <p className="footer__content__my-info__text">
-                Fullstack Web Developer
+                Fullstack Developer
               </p>
             </div>
             <div className="footer__content__my-info__socials">
@@ -62,7 +62,7 @@ function Footer({ children }: props) {
 
           <nav className="footer__content__links-area">
             <div className="footer__content__links">
-              <h4 className="footer__content__links__title">useful_links</h4>
+              <h5 className="footer__content__links__title">useful_links</h5>
               <Link to="/" className="footer__content__links__link">
                 <p className="footer__content__links__link__text">Home</p>
               </Link>
@@ -77,9 +77,9 @@ function Footer({ children }: props) {
               </Link>
             </div>
             <div className="footer__content__links">
-              <h4 className="footer__content__links__title">projects</h4>
+              <h5 className="footer__content__links__title">projects</h5>
               <Link
-                to="/projects/bucket"
+                to="/projects/bucket-list"
                 className="footer__content__links__link"
               >
                 <p className="footer__content__links__link__text">

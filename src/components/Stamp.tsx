@@ -1,4 +1,4 @@
-import "./Stamp.css";
+import "./styles/Stamp.css";
 
 interface props {
   src: string;

@@ -14,11 +14,18 @@ body {
   --color-neutral-dark: #1e1e1e;
   --color-accent-blue: #397ca8;
   --color-accent-green: #1d7b56;
+  --card-bg: var(--color-neutral-dark-grey);
+  --banner-bg: var(--color-neutral-dark);
+  --nav-bg: var(--color-neutral-dark);
   --content-width: 1000px;
+
+  --responsive: 850px;
 
   --p-size: 18.75px;
 
   --card-padding: 50px;
+
+  background-color: var(--color-neutral-dark) !important;
 }
 
 code {
@@ -54,7 +61,20 @@ h4 {
 }
 h5 {
   font-family: "Space Mono", monospace;
-  font-size: 15px;
+  font-size: 18.75px;
+}
+h6 {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 30px;
+  }
 }
 
 p {
@@ -85,4 +105,8 @@ p {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-neutral-grey);
+}
+
+.no-margin {
+  margin: 0;
 }

@@ -1,5 +1,5 @@
+import "./styles/ProjectTab.css";
 import { Link } from "react-router-dom";
-import "./ProjectTab.css";
 
 interface props {
   src: string;
@@ -13,7 +13,11 @@ interface props {
 function ProjectTab({ src, alt, name, date, dest, target }: props) {
   const ProjectTabDivider = () => {
     return (
-      <div className="project-tab__divider-container">
+      <div
+        className={
+          "project-tab__divider-container project-tab__hidden-on-mobile"
+        }
+      >
         <div className="project-tab__divider" />
       </div>
     );
@@ -26,7 +30,7 @@ function ProjectTab({ src, alt, name, date, dest, target }: props) {
             <img className="project-tab__left__icon" src={src} alt={alt} />
           </div>
           <ProjectTabDivider />
-          <h3 className="project-tab__text">{name}</h3>
+          <h3 className="project-tab__text project-tab__name">{name}</h3>
         </div>
         <div className="project-tab__right">
           <ProjectTabDivider />

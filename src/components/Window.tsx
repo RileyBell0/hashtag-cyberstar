@@ -1,4 +1,4 @@
-import "./Window.css";
+import "./styles/Window.css";
 
 interface props {
   children: any;
@@ -31,7 +31,9 @@ function Window({ children, title, info, className }: props) {
       <div className="window__info-bar">
         {info !== undefined
           ? info.map((value: string) => (
-              <h5 className="window__info-bar__text">{value.toLowerCase()}</h5>
+              <h6 key={value} className="window__info-bar__text">
+                {value.toLowerCase()}
+              </h6>
             ))
           : ""}
       </div>

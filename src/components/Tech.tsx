@@ -1,4 +1,4 @@
-import "./Tech.css";
+import "./styles/Tech.css";
 
 interface props {
   src: string;

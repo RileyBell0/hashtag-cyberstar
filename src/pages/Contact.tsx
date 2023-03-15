@@ -1,4 +1,4 @@
-import "./Contact.css";
+import "./styles/Contact.css";
 
 import Card from "../components/Card";
 import Page from "../components/Page";

@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   text-decoration: none;
-  background-color: var(--color-neutral-dark);
+  background-color: var(--card-bg);
   width: 100%;
 }
 
@@ -41,7 +41,7 @@
   flex-direction: row;
   align-items: center;
 
-  border: 1px solid var(--color-neutral-grey);
+  border: 2px solid var(--color-neutral-grey);
   border-right: transparent;
 }
 .project-tab__right {
@@ -52,7 +52,7 @@
   justify-content: flex-end;
   align-items: center;
 
-  border: 1px solid var(--color-neutral-grey);
+  border: 2px solid var(--color-neutral-grey);
   border-left: transparent;
 }
 
@@ -102,4 +102,67 @@
   text-align: center;
   padding-right: 20px;
   box-sizing: border-box;
+}
+
+@media (max-width: 584px) {
+  .project-tab__text {
+    font-size: 18.75px;
+  }
+  .project-tab {
+    display: flex;
+    flex-direction: row;
+  }
+  .project-tab__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-tab__hidden-on-mobile {
+    display: none;
+  }
+
+  .project-tab__left__icon-container {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .project-tab__left__icon {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .project-tab__name {
+    padding-left: 15px;
+    padding-bottom: 7.5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .project-tab__right {
+    flex-direction: column-reverse;
+  }
+  .project-tab__right__link {
+    padding: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: end;
+  }
+  .project-tab__right__date {
+    padding-bottom: 7.5px;
+    padding-right: 15px;
+    width: 100%;
+    text-align: end;
+    box-sizing: border-box;
+  }
 }

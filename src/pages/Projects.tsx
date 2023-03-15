@@ -1,4 +1,4 @@
-import "./Projects.css";
+import "./styles/Projects.css";
 import Page from "../components/Page";
 import PageContent from "../components/PageContent";
 import Window from "../components/Window";
@@ -12,7 +12,7 @@ function Projects() {
   return (
     <Page background="projects__bg">
       <PageContent>
-        <Window title="projects" info={["items: 4", "2019-2023", "university"]}>
+        <Window title="projects" info={["items: 4", "", "university"]}>
           <div className="projects">
             <ProjectTab
               dest="/projects/this-site"
@@ -22,12 +22,19 @@ function Projects() {
               date="2023"
             />
             <ProjectTab
-              dest="/projects/bucketlist"
+              dest="/projects/bucket-list"
               src={bucket_icon}
               alt="Bucket List"
               name="bucket_list"
               date="2022"
             />
+            {/* <ProjectTab
+              dest="/projects/raytracer"
+              src={tupgorg_icon}
+              alt="Ray Tracer"
+              name="ray_tracer"
+              date="2021"
+            /> */}
             <ProjectTab
               dest="/projects/tupgorg"
               src={tupgorg_icon}
@@ -42,7 +49,7 @@ function Projects() {
               name="wumpus"
               date="2019"
             />
-            <h5 className="projects__results">4 results found</h5>
+            <h6 className="projects__results">4 results found</h6>
           </div>
         </Window>
       </PageContent>

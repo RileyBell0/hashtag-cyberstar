@@ -1,0 +1,33 @@
+.banner-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--banner-bg) !important;
+
+  z-index: 1;
+}
+
+.banner-image__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+.banner-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  top: 0;
+}

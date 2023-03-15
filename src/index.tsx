@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import BucketList from "./pages/projects/BucketList";
 import Wumpus from "./pages/projects/Wumpus";
-import RayTracer from "./pages/projects/RayTracer";
+// import RayTracer from "./pages/projects/RayTracer";
 import Tupgorg from "./pages/projects/Tupgorg";
 import GitHub from "./pages/GitHub";
 import About from "./pages/About";
@@ -23,9 +23,9 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/bucketlist" element={<BucketList />} />
+        <Route path="/projects/bucket-list" element={<BucketList />} />
         <Route path="/projects/wumpus" element={<Wumpus />} />
-        <Route path="/projects/raytracer" element={<RayTracer />} />
+        {/* <Route path="/projects/raytracer" element={<RayTracer />} /> */}
         <Route path="/projects/tupgorg" element={<Tupgorg />} />
         <Route path="/projects/this-site" element={<ThisSite />} />
         <Route path="/github" element={<GitHub />} />
