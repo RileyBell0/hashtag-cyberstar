@@ -78,6 +78,9 @@ function Footer({ children }: props) {
               <Link to="/contact" className="footer__content__links__link">
                 <p className="footer__content__links__link__text">Contact</p>
               </Link>
+              <Link to="/credit" className="footer__content__links__link">
+                <p className="footer__content__links__link__text">Credit</p>
+              </Link>
             </div>
             <div className="footer__content__links">
               <h5 className="footer__content__links__title">projects</h5>

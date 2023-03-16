@@ -13,6 +13,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import ThisSite from "./pages/projects/ThisSite";
+import Credit from "./pages/Credit";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -31,6 +32,7 @@ root.render(
         <Route path="/github" element={<GitHub />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/credit" element={<Credit />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
