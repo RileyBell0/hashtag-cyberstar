@@ -50,13 +50,16 @@ function Footer({ children }: props) {
                   className="footer__content__my-info__socials__icon"
                 />
               </Link>
-              <button className="footer__content__my-info__socials__button">
+              <a
+                className="footer__content__my-info__socials__button"
+                href="mailto: rileybell484@gmail.com"
+              >
                 <img
                   src={email}
                   alt="Link to write me an email"
                   className="footer__content__my-info__socials__icon"
                 />
-              </button>
+              </a>
             </div>
           </div>
 
@@ -79,6 +82,12 @@ function Footer({ children }: props) {
             <div className="footer__content__links">
               <h5 className="footer__content__links__title">projects</h5>
               <Link
+                to="/projects/this-site"
+                className="footer__content__links__link"
+              >
+                <p className="footer__content__links__link__text">This Site</p>
+              </Link>
+              <Link
                 to="/projects/bucket-list"
                 className="footer__content__links__link"
               >
@@ -87,22 +96,16 @@ function Footer({ children }: props) {
                 </p>
               </Link>
               <Link
-                to="/projects/this-site"
+                to="/projects/tupgorg"
                 className="footer__content__links__link"
               >
-                <p className="footer__content__links__link__text">This Site</p>
+                <p className="footer__content__links__link__text">Tupgorg</p>
               </Link>
               <Link
                 to="/projects/wumpus"
                 className="footer__content__links__link"
               >
                 <p className="footer__content__links__link__text">Wumpus</p>
-              </Link>
-              <Link
-                to="/projects/tupgorg"
-                className="footer__content__links__link"
-              >
-                <p className="footer__content__links__link__text">Tupgorg</p>
               </Link>
             </div>
           </nav>

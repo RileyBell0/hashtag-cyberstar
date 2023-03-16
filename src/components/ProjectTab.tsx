@@ -8,9 +8,10 @@ interface props {
   date: string;
   dest: string;
   target?: string;
+  inactive?: boolean;
 }
 
-function ProjectTab({ src, alt, name, date, dest, target }: props) {
+function ProjectTab({ src, alt, name, date, dest, target, inactive }: props) {
   const ProjectTabDivider = () => {
     return (
       <div
@@ -22,9 +23,9 @@ function ProjectTab({ src, alt, name, date, dest, target }: props) {
       </div>
     );
   };
-  return (
-    <>
-      <Link to={dest} className="project-tab" target={target ? target : ""}>
+  const Tab = () => {
+    return (
+      <>
         <div className="project-tab__left">
           <div className="project-tab__left__icon-container">
             <img className="project-tab__left__icon" src={src} alt={alt} />
@@ -36,10 +37,27 @@ function ProjectTab({ src, alt, name, date, dest, target }: props) {
           <ProjectTabDivider />
           <h4 className="project-tab__text project-tab__right__date">{date}</h4>
           <ProjectTabDivider />
-          <h4 className="project-tab__text project-tab__right__link">&gt;</h4>
+
+          <h4
+            className={
+              "project-tab__text project-tab__right__link " +
+              (inactive ? "project-tab__text--inactive" : "")
+            }
+          >
+            {inactive ? "x" : ">"}
+          </h4>
         </div>
-      </Link>
-    </>
+      </>
+    );
+  };
+  return inactive ? (
+    <div className="project-tab--inactive">
+      <Tab />
+    </div>
+  ) : (
+    <Link to={dest} className="project-tab" target={target ? target : ""}>
+      <Tab />
+    </Link>
   );
 }
 

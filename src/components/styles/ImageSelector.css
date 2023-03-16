@@ -1,0 +1,138 @@
+.image-selector-container {
+  padding: 0px !important;
+  display: flex;
+  flex-direction: column;
+}
+.image-selector {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.image-selector__results {
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.image-selector__display-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  max-height: 460px;
+  text-align: center;
+}
+.image-selector__display {
+  width: 100%;
+  min-height: 0;
+  height: 100%;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+.image-selector__files {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid var(--color-neutral-grey);
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding-bottom: 20px;
+  min-width: 275px;
+}
+.image-selector__files__file__name {
+  padding-right: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+.image-selector__files__file__selector {
+  padding-left: 15px;
+  padding-right: 5px;
+  border-left: 2px solid var(--color-neutral-grey);
+  box-sizing: border-box;
+}
+.image-selector__files__file-container {
+  border: 2px solid var(--color-neutral-grey);
+  background-color: var(--color-neutral-dark-grey);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+
+  width: 100%;
+}
+.image-selector__files-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  border-bottom: 2px solid var(--color-neutral-grey);
+  padding: 20px;
+  gap: 20px;
+  height: 400px;
+  box-sizing: border-box;
+}
+.image-selector__files__file-container:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+}
+.image-selector__files__file-container:hover
+  .image-selector__files__file__name {
+  filter: brightness(80%);
+  color: var(--color-accent-blue);
+  font-style: bold;
+}
+.image-selector__files__file-container:hover
+  .image-selector__files__file__selector {
+  filter: brightness(80%);
+  color: var(--color-accent-blue);
+  font-style: bold;
+}
+.image-selector__files__file-container:active
+  .image-selector__files__file__name {
+  filter: brightness(80%);
+  color: var(--color-accent-green);
+  text-decoration: underline;
+  font-style: bold;
+}
+.image-selector__files__file-container:active
+  .image-selector__files__file__selector {
+  filter: brightness(80%);
+  color: var(--color-accent-green);
+  text-decoration: underline;
+  font-style: bold;
+}
+
+@media (max-width: 768px) {
+  .image-selector {
+    flex-direction: column-reverse;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .image-selector__files {
+    border-right: none;
+    min-width: 0px;
+  }
+  .image-selector__files-container {
+    padding: 10px;
+    border-right: 1px solid var(--color-neutral-grey);
+    border-left: 2px solid var(--color-neutral-grey);
+    border-top: 2px solid var(--color-neutral-grey);
+  }
+  .image-selector__display-container {
+    padding: 0px;
+    padding-top: 40px;
+  }
+}

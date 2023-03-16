@@ -3,7 +3,7 @@ import Card from "../components/Card";
 import Page from "../components/Page";
 import PageContent from "../components/PageContent";
 import Tech from "../components/Tech";
-import frontend_icon from "../images/frontend_icon.png";
+import frontend_icon from "../images/html_icon.png";
 import selfie from "../images/Selfie.png";
 import ts_icon from "../images/typescript_icon.png";
 import backend_icon from "../images/backend_icon.png";
@@ -14,9 +14,9 @@ import resume from "../assets/riley-bell-resume.pdf";
 
 function About() {
   const secondText =
-    "And Javascript. Growing up I always loved creativity through music, and problem solving in the form of mathematics. In my time at University, I found that programming was the perfect way for me to effectively combine both of these.";
+    "I began my journey in the technology field while studying at RMIT, where I pursued a Bachelor of IT majoring in Games and Graphics programming. It was during this time that I first fell in love with the creative potential of coding, and I continue to appreciate the balance of creativity and logic that software development requires. I recently completed my Bachelor at the University of Melbourne, during which I've gained experience with a wide range of technologies and design methodologies.";
   const finalText =
-    "Passions, especially within the realm of Web development. Recently I was introduced to Typescript and I fell in love, instantly introducing it into my current personal web. Development project in the place of Javascript, and am currently in the process of learning Angular alongside this, as though I’ve found React to be an incredibly.";
+    "As someone who enjoys the challenge of designing within constraints, I have a particular interest in developing more user-friendly and intuitive command-line interfaces. I am currently working on a typescript version of Wumpus World as a short rogue-like command line game which I hope to integrate into this site at a later date. Overall, I am a motivated and skilled Fullstack developer with a passion for using software to design creative and yet purposeful solutions to interesting problems. I love learning and am excited to bring my expertise to future projects.";
 
   return (
     <Page background="about__bg">
@@ -29,9 +29,11 @@ function About() {
           <div className="about__row about__name">
             <div className="about__half-page">
               <p className="about__top-description__first">
-                I’m a Full stack web developer, with a main focus surrounding
-                React as a part of the MERN stack. I’m currently employed
-                full-time as a frontend developer utilising mainly PHP.
+                As a Fullstack developer, I have experience working with both
+                the MERN and LAMP tech stacks. While I am more familiar with the
+                MERN stack, I've loved learning and utilising the LAMP stack as
+                a part of my current job as a Junior Software Developer at Swoop
+                Analytics.
               </p>
               <div className="about__techs">
                 <Tech src={frontend_icon} name="Frontend" />

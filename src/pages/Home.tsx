@@ -6,7 +6,6 @@ import Card from "../components/Card";
 import Banner from "../components/BannerImage";
 import ascii_map_bg from "../images/ascii-map.png";
 import Divider from "../components/Divider";
-import BigTech from "../components/BigTech";
 import Stamp from "../components/Stamp";
 import selfie from "../images/Selfie.png";
 import ts_icon from "../images/typescript_icon.png";
@@ -89,8 +88,9 @@ function AboutPostcard() {
           <div className="home__about__left">
             <h3 className="home__about__title">about_me</h3>
             <p>
-              I’m a Fullstack developer with solid experience developing web
-              applications using the MERN stack. I have experience with
+              I’m an accomplished Fullstack developer with extensive experience
+              developing high-quality applications using the MERN stack. I have
+              experience with
             </p>
             <ul className="home__bullet-list">
               <li>
@@ -107,8 +107,8 @@ function AboutPostcard() {
               </li>
             </ul>
             <p>
-              For a more in-depth overview, feel free to visit the “About”
-              section, or check out my attached resume.
+              To learn more about my skills and experience, please visit the
+              "About" section or refer to my attached resume.
             </p>
           </div>
         </div>

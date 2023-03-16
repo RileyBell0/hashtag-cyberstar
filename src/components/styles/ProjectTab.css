@@ -6,6 +6,17 @@
   background-color: var(--card-bg);
   width: 100%;
 }
+.project-tab--inactive {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  background-color: var(--card-bg);
+  width: 100%;
+}
+.project-tab__text--inactive {
+  color: var(--color-neutral-grey);
+}
 
 .project-tab:hover {
   cursor: pointer;
@@ -104,7 +115,7 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 584px) {
+@media (max-width: 632px) {
   .project-tab__text {
     font-size: 18.75px;
   }

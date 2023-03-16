@@ -1,4 +1,4 @@
-import "./BucketList.css";
+import "./Project.css";
 import Card from "../../components/Card";
 import Page from "../../components/Page";
 import PageContent from "../../components/PageContent";
@@ -6,7 +6,7 @@ import bucket_icon from "../../images/bucket_icon_light.png";
 import Window from "../../components/Window";
 import ProjectTab from "../../components/ProjectTab";
 import ProjectLegend from "../../components/ProjectLegend";
-import frontend from "../../images/frontend_icon.png";
+import frontend from "../../images/html_icon.png";
 import backend from "../../images/backend_icon.png";
 import Divider from "../../components/Divider";
 import Tech from "../../components/Tech";
@@ -20,7 +20,6 @@ import bucket_example_login from "../../images/bucket_list_login_page.png";
 import bucket_example_map from "../../images/bucket_list_map_page.png";
 import bucket_example_settings from "../../images/bucket_list_settings_page.png";
 import bucket_example_trip from "../../images/bucket_list_trip_page.png";
-import { useState } from "react";
 import github_icon from "../../images/github_light_icon.png";
 import TeamCard from "../../components/TeamCard";
 import riley from "../../images/Selfie.png";
@@ -30,6 +29,7 @@ import ted from "../../images/ted.jpg";
 import luke from "../../images/luke.jpg";
 import Button from "../../components/Button";
 import tupgorg_icon from "../../images/tupgorg_icon.png";
+import ImageSelector from "../../components/ImageSelector";
 
 const example_images = [
   [
@@ -84,7 +84,7 @@ function BucketList() {
 
         <Window
           title="metadata"
-          info={["4 items"]}
+          info={["2 items"]}
           className="project__metadata"
         >
           <div className="project__metadata__content">
@@ -117,13 +117,15 @@ function BucketList() {
           <div className="project__details__desc">
             <h4>description</h4>{" "}
             <p className="project__details__desc__text">
-              A much longer description spanning two paragraphs describing the
-              purpose of the project, significant achievements, clarification on
-              my role within its development. Also includes details such as what
-              I learnt - such as team leadership. And mentions areas for
-              improvement, and further directions / goals for the project. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in
-              turpis tellus. Vivamus urna eros, pharetra vel tristique eget.
+              Bucket List was a pivotal project in my journey as a software
+              developer. Developing this as a part of my university capstone was
+              my first experience working within an Agile software development
+              team. My team of five each took on different roles and
+              responsibilities, with my focus being on frontend development and
+              ensuring the project stayed on track within my role as a Product
+              Owner. Using a wide range of Technologies and APIs, we were able
+              to deliver a fully functional and refined product for both desktop
+              and mobile usage.
             </p>
           </div>
           <Divider className="project__details__divider" weight={2} />
@@ -188,63 +190,4 @@ function BucketList() {
   );
 }
 
-function ImageSelector({ images }: { images: Array<Array<string>> }) {
-  const NAME_INDEX = 0;
-  const SRC_INDEX = 1;
-  const ALT_INDEX = 2;
-  const DESC_INDEX = 3;
-
-  const [selected_img, setSelectedImg] = useState(images[0]);
-
-  const ImageSelectorButton = ({
-    selected_img,
-  }: {
-    selected_img: Array<string>;
-  }) => {
-    const [stored_img] = useState(selected_img);
-
-    return (
-      <button
-        className="project__images__files__file-container"
-        onClick={() => setSelectedImg(stored_img)}
-      >
-        <h5 className="project__images__files__file__name no-margin">
-          {stored_img[NAME_INDEX]}
-        </h5>
-        <h5 className="project__images__files__file__selector no-margin">
-          &gt;
-        </h5>
-      </button>
-    );
-  };
-
-  return (
-    <Window
-      className="project__images-container"
-      title="images"
-      info={[images.length + " items"]}
-    >
-      <div className="project__images">
-        <div className="project__images__files">
-          <div className="project__images__files-container">
-            {images.map((img_details: Array<string>) => {
-              return <ImageSelectorButton selected_img={img_details} />;
-            })}
-          </div>
-          <p className="project__images__results">
-            {images.length} results found
-          </p>
-        </div>
-        <div className="project__images__display-container">
-          <img
-            className="project__images__display"
-            src={selected_img[SRC_INDEX]}
-            alt={selected_img[ALT_INDEX]}
-          />
-          <p>{selected_img[DESC_INDEX]}</p>
-        </div>
-      </div>
-    </Window>
-  );
-}
 export default BucketList;

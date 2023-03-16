@@ -18,9 +18,14 @@ function Contact() {
             Linked-in
           </p>
           <div className="contact__buttons">
-            <Button img={email} alt="Email Icon" dest="">
-              email
-            </Button>
+            <a
+              href="mailto: rileybell484@gmail.com"
+              className="contact__buttons__email"
+            >
+              <Button img={email} alt="Send me an Email">
+                email
+              </Button>
+            </a>
 
             <Button
               newTab={true}
